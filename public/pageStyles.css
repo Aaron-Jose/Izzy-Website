@@ -1,0 +1,46 @@
+.pagetitle {
+    font-family: var(--normalFont), system-ui;
+    font-size:4vw;
+    font-weight: lighter;
+    
+    color: var(--alttextColor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5vw;
+    padding-top: 5vh;
+    width: 100%;
+}
+
+.pagesubtitle {
+    display: flex;
+    margin-top: -5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--normalFont), system-ui;
+    color: var(--textColor);
+}
+
+#tabthree p {
+    padding: 0px 10%;
+    text-align: center;
+    font-family: var(--normalFont), system-ui;
+    color: var(--alttextColor);
+    font-size:2vw;
+}
+
+#tabthree img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.aboutme-container {
+    display: flex;
+    align-items: stretch;
+    padding: 0px 5%;
+}
+

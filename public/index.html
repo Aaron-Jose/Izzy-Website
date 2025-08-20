@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/5b914d6ae4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navigation.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Peralta&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+
+      @font-face {
+        font-family: Graffiti1;
+        src: url(content/adrip1.ttf);
+      }
+
+      @font-face {
+        font-family: Graffiti2;
+        src: url(content/Urban\ Calligraphy.ttf);
+      }
+
+      :root {
+        --mainTitleFont: "Irish Grover";
+        --normalFont: "Irish Grover";
+
+        --headerTextColor: #ffffff;
+        --bgColor: #ababab;
+        --textColor: #ffffff;
+        --alttextColor: #f4f4f4;
+
+        --timelineColor: rgb(227, 227, 227);
+      }
+    </style>
+
+    <title>The Local Rug Dealer</title>
+    <link rel="icon" type="image/x-icon" href="content/logo.png" />
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-messaging-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-storage-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.2/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <meta
+      name="google-site-verification"
+      content="CqAXRQ7OvsErwm3_xFSdsD1ALrbZgslas4VGrwb8Rkc"
+    />
+  </head>
+  <body>
+    <div class="MenuIcon">
+
+      <span id="menuIcon">
+        <a id="pageMenuBtn" onclick="document.location.href='https://www.etsy.com/uk/shop/TheLocalRugDealer'">
+          <img src="content/logo.png" alt="Business' Logo" />
+        </a>
+      </span>
+
+      <nav id="nav-contents" class="unpressed">
+        <div id="homelink" class="links">
+          <button id="defaultOpen" class="tablink" onclick="openPage('HOME')">
+            HOME
+          </button>
+        </div>
+
+        <div class="links">
+          <button class="tablink" onclick="openPage('TABONE')">
+            GALLERY
+          </button>
+        </div>
+
+        <div class="links">
+          <button class="tablink" onclick="openPage('TABTWO')">
+            THE PROCESS
+          </button>
+        </div>
+
+        <div class="logo">
+          <button class="tablink" onclick="openPage('HOME')">
+            <img src="content/logo.png" alt="Business' Logo" />
+          </button>
+        </div>
+
+        <div class="links">
+          <button class="tablink" onclick="openPage('TABTHREE')">
+            ABOUT ME
+          </button>
+        </div>
+
+        <div class="links">
+          <button onclick="document.location.href='https://www.etsy.com/uk/shop/TheLocalRugDealer'">
+            BUY NOW
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div id="HOME" class="tabcontent">
+      <div class="titlecontents">
+        <div class="title">
+          <h1 id="title">THE LOCAL</h1>
+          <h1 id="subtitle">RUG DEALER</h1>
+        </div>
+
+        <div class="chevron">
+          <a id="chev" class="chevron--down" href="#examples">
+            <svg
+              width="100"
+              height="100"
+              viewbox="0 0 100 100"
+              preserveAspectRatio="xMidYMid"
+            >
+              <g class="chevron__container">
+                <line class="chevron__line1" x1="10" y1="50" x2="50" y2="50" />
+                <line class="chevron__line2" x1="90" y1="50" x2="50" y2="50" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="TABONE" class="tabtitle">
+      <div class="pagetitle">
+        <h1>Products</h1>
+      </div>
+
+      <h2 class="pagesubtitle">
+        a look into all the rugs ive made
+      </h2>
+    </div>
+    
+    <div id="TABTWO" class="tabtitle">
+      <div class="pagetitle">
+        <h1>The Process</h1>
+      </div>
+    </div>
+
+    <div id="TABTHREE" class="tabtitle">
+      <div class="pagetitle">
+        <h1>About Me</h1>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <div id="mainbody">
+      <div id="tabone" class="tabcontent">
+        <div id="examples" class="row">
+          <div class="column">
+            <div class="columnimage">
+              <img src="content/products-1.jpeg" alt="Blue Ball(s)" />
+            </div>
+            <h2>Blue Ball(s)</h2>
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+              eget elementum magna tristique. Quisque vehicula, risus eget aliquam
+              placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+              Praesent scelerisque tortor sed accumsan convallis.
+            </p> -->
+          </div>
+
+          <div class="column">
+            <div class="columnimage">
+              <img src="content/products-2.jpeg" alt="Stacey's Upstairs Lips" />
+            </div>
+            <h2>Stacey's Upstairs Lips</h2>
+          </div>
+
+          <div class="column">
+            <div class="columnimage">
+              <img src="content/products-3.jpeg" alt="Evil Eye Rug" />
+            </div>
+            <h2>Evil Eye Rug</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="columnimage">
+              <img src="content/products-4.jpeg" alt="Thermal Hand Rug" />
+            </div>
+            <h2>Thermal Hand Rug</h2>
+          </div>
+        </div>
+
+        <br /><br /><br /><br /><br /><br /><br />
+      </div>
+
+      <div id="tabthree" class="tabcontent">
+        <div class="aboutme-container">
+          <div id="aboutme-img">
+            <img src="content/izzy.jpeg" alt="a picture of isabella" />
+          </div>
+
+          <div id="aboutme-p">
+            <p>
+              Hello, my name is Izzy and I am The Local Rug Dealer. I am a 19 year
+              old student who is working towards paying off her debt in a
+              non-traditional way! My small business is held in my bedroom with
+              every product having the utmost amount of care in it.
+            </p>
+          </div>
+        </div>
+
+        <br /><br /><br /><br /><br /><br /><br />
+      </div>
+
+      <div id="tabtwo" class="tabcontent">
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>STEP 1</h2>
+              <p>
+                I choose my design and select the coloured wool needed for my
+                amazing design.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>STEP 2</h2>
+              <p>
+                Then I prepare my fabric by stretching it across my hand made
+                frame (shoutout to my dad steve for making it for me)
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>STEP 3</h2>
+              <p>
+                Next I use a projector to project my design onto my canvas and
+                use markers to sketch it on.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>STEP 4</h2>
+              <p>
+                Now the interesting step begins as I choose my starting wool and
+                thread up my tufting gun and start tufting away.(Depending on
+                the design this process can take a few hours).
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>STEP 5</h2>
+              <p>
+                Once the design is complete I then take it off the canvas, glue
+                the back and shave and shape it.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>STEP 6</h2>
+              <p>
+                Then some backing is fitted to the back and BOOM an awesome rug
+                is hand crafted.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br /><br /><br /><br /><br /><br /><br />
+      </div>
+
+
+      <br /><br /><br /><br /><br /><br /><br />
+    </div>
+
+    <div class="footer">
+      <a href="https://aarons-portfolio.web.app/">made by Aaron Jose</a>
+    </div>
+
+    <script src="/public/index.js"></script>
+
+    <script>
+      function openPage(pageName) {
+        var i, tabtitle, tabcontent, tablinks;
+
+        tabtitle = document.getElementsByClassName("tabtitle");
+        for (i = 0; i < tabtitle.length; i++) {
+          tabtitle[i].style.display = "none";
+        }
+        if (pageName == "HOME") {
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "block";
+          }
+        } else {
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+        }
+
+        document.getElementById(pageName).style.display = "block";
+        document.getElementById(pageName.toLowerCase()).style.display = "block";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,135 @@
+/* Media Tags ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+
+  .links {
+    display: block;
+    float: left;
+    padding: 10px 15px;
+  }
+
+  .links button {
+    font-size: 1.75vh;
+  }
+
+  .column h2 {
+    font-size: 8vw;
+  }
+
+  .column p {
+    font-size: 3.5vw;
+  }
+
+  .MenuIcon a {
+    font-size: 3.5vw;
+  }
+
+  .aboutme-container {
+    flex-direction: column;
+  }
+
+  .aboutme-container p {
+    font-size: 6vw !important;
+  }
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  .titlecontents {
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 16vh;
+  }
+
+  .chevron {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-height: 1000px) and (orientation: portrait) {
+  .titlecontents {
+    margin-top: 50%;
+  }
+
+  .title {
+    font-size: 14vw;
+  }
+
+  .chevron {
+    padding-top: 35%;
+    padding-bottom: 20%;
+  }
+}
+
+/* NAVIGATION MENU MEDIA TAG ------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (((orientation: landscape) and (max-width: 1000px)) or ((max-width: 1000px) and (orientation: portrait))) {
+  .MenuIcon {
+    top: 0px;
+    padding-top: 4vh;
+    padding-left: 5vh;
+    position: fixed;
+  }
+
+  #menuIcon {
+    display: inherit;
+  }
+
+  #nav-contents {
+    padding: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-200%);
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transition: all 0.7s;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    justify-content: left;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  #nav-contents button {
+    display: inherit;
+    text-align: left;
+    width: auto;
+  }
+
+  #nav-contents div {
+    width: 100%;
+  }
+
+  .links {
+    padding: 0 auto;
+    width: auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #homelink {
+    display: inherit;
+  }
+
+  .MenuIcon:hover .nav-contents {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  /* .pressed {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition-timing-function: cubic-bezier(0, 0, .58, 1);
+  } */
+}
